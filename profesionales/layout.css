@@ -177,8 +177,8 @@ table.table-bordered.dataTable td {
   border-color: #8080803b;
 }
 
-.form_label>label {
-  display: block;
+.form_label> label {
+  display: ;
 }
 
 .btn {
