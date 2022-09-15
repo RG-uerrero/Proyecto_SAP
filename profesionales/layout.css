@@ -170,7 +170,9 @@ table.table-bordered.dataTable td {
 
 .hist_content{
   min-height: 860px;
-  margin: 2px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid;
 }
 
 .form_label>label {
