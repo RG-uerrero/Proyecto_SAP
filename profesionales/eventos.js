@@ -83,3 +83,17 @@ $('#departament').change(function (e) {
     })
 
 })
+
+const area = {
+    bac:["a", "b", "c", "d", "e"],
+    en_aux: ["f", "g", "h", "i"]
+}
+$('#professions').change(function(a){
+    let modelList = document.getElementById("area");
+    while (modelList.options.length) {
+        modelList.remove(0);
+    }
+    area[$(this).val()].map(trabajo => {
+        $('#area').append(`<option value="${trabajo}">${trabajo}</option>`);
+    })
+})
