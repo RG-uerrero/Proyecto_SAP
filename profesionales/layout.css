@@ -163,12 +163,9 @@ table.table-bordered.dataTable td {
   border-radius: 10px;
 }
 
-/* PESTAÑA INGRESAR*/
-.tab_content{
-  margin: 16px ;
-}
+/* PESTAÑA VER*/
 
-.hist_content{
+.ingre_content {
   min-height: 860px;
   margin: 10px;
   padding: 15px 20px;
@@ -177,14 +174,92 @@ table.table-bordered.dataTable td {
   border-color: #8080803b;
 }
 
-.form_label> label {
-  display: ;
+/* PESTAÑA INGRESAR*/
+.tab_content {
+  margin: 16px;
+}
+
+.ingre_content {
+  min-height: 860px;
+  margin: 10px;
+  padding: 15px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #8080803b;
+}
+
+.form_label>label {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .btn {
   background-color: #464F60;
-  color:white;
+  color: white;
   float: right;
-
 }
 
+/* PESTAÑA CARGA EN BLOQUE*/
+
+.carga_content {
+  margin: 10px;
+  padding: 15px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #8080803b;
+}
+
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.btn_car{
+  margin: 5px;
+  color: black;
+  border-radius: 7px;
+  border-width: 3px;
+}
+
+.btn_vio{
+  background-color: rgba(148, 0, 211, 0.3);
+  border-color: violet;
+}
+
+.btn_ind{
+  background-color: rgba(75, 0, 130, 0.3);
+  border-color: indigo;
+}
+
+.btn_azu{
+  background-color: rgba(0, 0, 255, 0.3);
+  border-color: blue;
+}
+
+.btn_ver{
+  background-color: rgba(0, 255, 0, 0.3);
+  border-color: green;
+}
+
+.btn_ama{
+  background-color: rgba(255, 255, 0, 0.3);
+  border-color: yellow;
+}
+
+.btn_nar{
+  background-color: rgba(255, 127, 0, 0.3);
+  border-color: orange;
+}
+
+.btn_roj{
+  background-color: rgba(255, 0, 0, 0.3);
+  border-color: red;
+}
+
+.botn{
+  background-color: #464F60;
+  color: white;
+}
