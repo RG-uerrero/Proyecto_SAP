@@ -222,41 +222,86 @@ hr {
   color: black;
   border-radius: 7px;
   border-width: 3px;
+  cursor: pointer;
 }
 
+
+
 .btn_vio{
-  background-color: rgba(148, 0, 211, 0.3);
-  border-color: violet;
+  border-color: rgba(148, 0, 211, 0.5);
+  background-color: white;
+  color: rgba(148, 0, 211);
+}
+
+.btn_vio:hover{
+  background: rgba(148, 0, 211, 0.5);
+  color: white;
 }
 
 .btn_ind{
-  background-color: rgba(75, 0, 130, 0.3);
-  border-color: indigo;
+  background-color: white;
+  border-color: rgba(75, 0, 130, 0.5);
+  color: rgba(75, 0, 130);
+}
+
+.btn_ind:hover{
+  background: rgba(75, 0, 130, 0.5);
+  color: white;
 }
 
 .btn_azu{
-  background-color: rgba(0, 0, 255, 0.3);
-  border-color: blue;
+  background-color: white;
+  border-color: rgba(0, 0, 255, 0.5);
+  color:  rgba(0, 0, 255);
+}
+
+.btn_azu:hover{
+  background: rgba(0, 0, 255, 0.5);
+  color: white;
 }
 
 .btn_ver{
-  background-color: rgba(0, 255, 0, 0.3);
-  border-color: green;
+  background-color: white;
+  border-color: rgba(0, 255, 0, 0.5);
+  color: rgba(0, 255, 0);
+}
+
+.btn_ver:hover{
+  background: rgba(0, 255, 0, 0.5);
+  color: rgba(0, 0, 0, 0.700);
 }
 
 .btn_ama{
-  background-color: rgba(255, 255, 0, 0.3);
-  border-color: yellow;
+  background-color: rgba(255, 255, 255, 0.801);
+  border-color: rgba(255, 255, 0, 0.5);
+  color: yellow;
+}
+
+.btn_ama:hover{
+  background: yellow;
+  color: rgba(0, 0, 0, 0.700);
 }
 
 .btn_nar{
-  background-color: rgba(255, 127, 0, 0.3);
-  border-color: orange;
+  background-color: white;
+  border-color: rgba(255, 127, 0, 0.5);
+  color: rgba(255, 127, 0, 0.5);
+}
+
+.btn_nar:hover{
+  background-color: rgba(255, 127, 0, 0.5);
+  color: white;
 }
 
 .btn_roj{
-  background-color: rgba(255, 0, 0, 0.3);
-  border-color: red;
+  background-color: white;
+  border-color: rgba(255, 0, 0, 0.5);
+  color: rgba(255, 0, 0, 0.5);
+}
+
+.btn_roj:hover{
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
 }
 
 .botn{
