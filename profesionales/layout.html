@@ -290,9 +290,10 @@
                                                 <img src="https://www.way.com.co/convenios/no-foto.jpg"
                                                     class="gambar img-responsive img-thumbnail" id="item-img-output"
                                                     style="width:350px; height: 350px;">
-                                                    <button class="btn btn-inverse waves-effect waves-light ingresando" type="file" name="img">Subir Foto</button>
+                                                <button class="btn btn-inverse waves-effect waves-light ingresando"
+                                                    type="file" name="img">Subir Foto</button>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="col-9">
@@ -355,7 +356,7 @@
                                                     <button class="btn btn-inverse waves-effect waves-light ingresando"
                                                         type="button" onclick="alert(2+2)">REALIZAR OPERACIÓN</button>
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -368,17 +369,41 @@
                             <label for="">Estructura de Archivo Excel</label><br>
                             <button type="button" class="btn_car btn_vio">Nombre</button>
                             <button type="button" class="btn_car btn_ind">Apellido</button>
-                            <button type="button" class="btn_car btn_azu">Tipo de Documento</button>
-                            <button type="button" class="btn_car btn_ver">Documento</button>
-                            <button type="button" class="btn_car btn_ama">Email</button>
-                            <button type="button" class="btn_car btn_nar">Celular</button>
-                            <button type="button" class="btn_car btn_roj">Genero</button>
-                            <button type="button" class="btn_car btn_vio">Departamento</button>
-                            <button type="button" class="btn_car btn_ind">Ciudad</button>
-                            <button type="button" class="btn_car btn_azu">Dirección</button>
-                            <button type="button" class="btn_car btn_ver">Área de trabajo</button>
-                            <button type="button" class="btn_car btn_ama">especializacion</button>
-                            <button type="button" class="btn_car btn_nar">Tipo de Formulario</button>
+                            <button type="button" class="btn_car btn_azu" data-toggle="modal"
+                                data-target="#exampleModal">Fecha de Nacimiento</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Formato de Fecha</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>El formato de fecha para que su archivo a cargar sea valido debe ser asi:
+                                                (AÑO-MES-DIA - 0000-00-00)</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn_car btn_ver">Tipo de Documento</button>
+                            <button type="button" class="btn_car btn_ama">Documento</button>
+                            <button type="button" class="btn_car btn_nar">Email</button>
+                            <button type="button" class="btn_car btn_roj">Celular</button>
+                            <button type="button" class="btn_car btn_vio">Genero</button>
+                            <button type="button" class="btn_car btn_ind">Departamento</button>
+                            <button type="button" class="btn_car btn_azu">Ciudad</button>
+                            <button type="button" class="btn_car btn_ver">Dirección</button>
+                            <button type="button" class="btn_car btn_ama">Área de trabajo</button>
+                            <button type="button" class="btn_car btn_nar">especializacion</button>
+                            <button type="button" class="btn_car btn_roj">Tipo de Formulario</button>
                             <button type="button" class="btn_car btn_roj">URL Foto</button>
                             <hr>
                             <label for="">Convenio</label><br>
