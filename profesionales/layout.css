@@ -225,8 +225,6 @@ hr {
   cursor: pointer;
 }
 
-
-
 .btn_vio{
   border-color: rgba(148, 0, 211, 0.5);
   background-color: white;
@@ -307,4 +305,8 @@ hr {
 .botn{
   background-color: #464F60;
   color: white;
+}
+
+.modal-content{
+  width: 550px;
 }
