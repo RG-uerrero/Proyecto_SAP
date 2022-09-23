@@ -271,12 +271,12 @@ hr {
 
 .btn_ama{
   background-color: rgba(255, 255, 255, 0.801);
-  border-color: rgba(255, 255, 0, 0.5);
-  color: yellow;
+  border-color: #ffbd4a;
+  color: #ffbd4a;
 }
 
 .btn_ama:hover{
-  background: yellow;
+  background: #ffbd4a;
   color: rgba(0, 0, 0, 0.700);
 }
 

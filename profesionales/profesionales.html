@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="../datatables/datatables.min.css" />
     <!--datables estilo bootstrap 4 CSS-->
     <link rel="stylesheet" type="text/css" href="/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="profesionales.css">
     <title>Sap</title>
 </head>
 
@@ -46,7 +46,7 @@
                 </li>
                 <li class="line">
                     <img src="../icons/profesionales 1.svg">
-                    <a href="#">Profesionales</a>
+                    <a href="../profesionales/profesionales.html">Profesionales</a>
                 </li>
                 <li class="line">
                     <img class="pa" src="../icons/medico.svg">
@@ -58,7 +58,7 @@
                 </li>
                 <li class="line">
                     <img class="pa" src="../icons/historia.svg">
-                    <a>Historia clinicas</a>
+                    <a href="../historia_clinica/historiaclinica.html">Historia clinicas</a>
                 </li>
                 <li class="line">
                     <img class="pe" src="../icons/report_FILL0_wght400_GRAD0_opsz48 1.svg">
@@ -647,8 +647,8 @@
                                 </div>
                             </div>
                             <button type="button" class="btn_car btn_azu" data-toggle="modal"
-                                data-target="#exampleModal">Ciudad</button>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                data-target="#city">Ciudad</button>
+                            <div class="modal fade" id="city" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
@@ -660,7 +660,39 @@
                                         </div>
                                         <div class="modal-body">
                                             <p>Debe cargar la opción de identificador en el archivo.</p>
-
+                                            <div class="table-responsive">
+                                                <div>
+                                                    <table id="datatableciudades" class="table table-striped table-bordered dataTable no-footer"
+                                                        style="font-size:12px;" role="grid" aria-describedby="datatableciudades_info">
+                        
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th class="sorting" tabindex="0" aria-controls="datatableciudades" rowspan="1"
+                                                                    colspan="1" aria-label="DEPARTAMENTO: activate to sort column ascending"
+                                                                    style="width: 0px;" aria-sort="descending">DEPARTAMENTO</th>
+                                                                <th class="sorting" tabindex="0" aria-controls="datatableciudades" rowspan="1"
+                                                                    colspan="1" aria-label="CIUDAD: activate to sort column ascending"
+                                                                    style="width: 0px;">CIUDAD</th>
+                                                                <th class="sorting" tabindex="0" aria-controls="datatableciudades" rowspan="1"
+                                                                    colspan="1" aria-label="IDENTIFICADOR: activate to sort column ascending"
+                                                                    style="width: 0px;">IDENTIFICADOR</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr role="row" class="odd">
+                                                                <td class="sorting_1">Nariño</td>
+                                                                <td>POLICARPA</td>
+                                                                <td>52540</td>
+                                                            </tr>
+                                                            <tr role="row" class="even">
+                                                                <td class="sorting_1">Atlántico</td>
+                                                                <td>POLONUEVO</td>
+                                                                <td>8558</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
@@ -841,7 +873,35 @@
                     </div>
                     <div class="tab-pane fade" id="nav-bloqueado" role="tabpanel" aria-labelledby="nav-bloqueado-tab">
                         <div>
-                            hellow
+                            <table id="datatableciudades" class="table table-striped table-bordered dataTable no-footer"
+                                style="font-size:12px;" role="grid" aria-describedby="datatableciudades_info">
+
+                                <thead>
+                                    <tr role="row">
+                                        <th class="sorting" tabindex="0" aria-controls="datatableciudades" rowspan="1"
+                                            colspan="1" aria-label="DEPARTAMENTO: activate to sort column ascending"
+                                            style="width: 0px;" aria-sort="descending">DEPARTAMENTO</th>
+                                        <th class="sorting" tabindex="0" aria-controls="datatableciudades" rowspan="1"
+                                            colspan="1" aria-label="CIUDAD: activate to sort column ascending"
+                                            style="width: 0px;">CIUDAD</th>
+                                        <th class="sorting" tabindex="0" aria-controls="datatableciudades" rowspan="1"
+                                            colspan="1" aria-label="IDENTIFICADOR: activate to sort column ascending"
+                                            style="width: 0px;">IDENTIFICADOR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr role="row" class="odd">
+                                        <td class="sorting_1">Nariño</td>
+                                        <td>POLICARPA</td>
+                                        <td>52540</td>
+                                    </tr>
+                                    <tr role="row" class="even">
+                                        <td class="sorting_1">Atlántico</td>
+                                        <td>POLONUEVO</td>
+                                        <td>8558</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nav-historia" role="tabpanel" aria-labelledby="nav-historia-tab">
