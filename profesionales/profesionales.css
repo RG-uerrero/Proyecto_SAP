@@ -232,8 +232,10 @@ hr {
 }
 
 .btn_vio:hover{
+  border-color: ;
   background: rgba(148, 0, 211, 0.5);
   color: white;
+  transition: 0.3s;
 }
 
 .btn_ind{
@@ -243,19 +245,23 @@ hr {
 }
 
 .btn_ind:hover{
+  border-color: rgba(75, 0, 130, 0.5);
   background: rgba(75, 0, 130, 0.5);
   color: white;
+  transition: 0.3s;
 }
 
 .btn_azu{
   background-color: white;
-  border-color: rgba(0, 0, 255, 0.5);
-  color:  rgba(0, 0, 255);
+  border-color: #5d9cec;
+  color:  #5d9cec;
 }
 
 .btn_azu:hover{
-  background: rgba(0, 0, 255, 0.5);
+  border-color: ;
+  background: #5d9cec;
   color: white;
+  transition: 0.3s;
 }
 
 .btn_ver{
@@ -265,8 +271,10 @@ hr {
 }
 
 .btn_ver:hover{
+  border-color: ;
   background: rgba(0, 255, 0, 0.5);
   color: rgba(0, 0, 0, 0.700);
+  transition: 0.3s;
 }
 
 .btn_ama{
@@ -276,8 +284,10 @@ hr {
 }
 
 .btn_ama:hover{
+  border-color: ;
   background: #ffbd4a;
   color: rgba(0, 0, 0, 0.700);
+  transition: 0.3s;
 }
 
 .btn_nar{
@@ -287,8 +297,10 @@ hr {
 }
 
 .btn_nar:hover{
+  border-color: ;
   background-color: rgba(255, 127, 0, 0.5);
   color: white;
+  transition: 0.3s;
 }
 
 .btn_roj{
@@ -298,8 +310,10 @@ hr {
 }
 
 .btn_roj:hover{
+  border-color: ;
   background-color: rgba(255, 0, 0, 0.5);
   color: white;
+  transition: 0.3s;
 }
 
 .botn{
@@ -309,4 +323,14 @@ hr {
 
 .modal-content{
   width: 550px;
+}
+
+/*Carga*/
+
+.main div{
+  background: transparent;
+}
+
+.modal-header, .modal-body, .modal-footer{
+  background: white !important;
 }
