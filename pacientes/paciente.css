@@ -1,199 +1,199 @@
 :root {
-    --gray: #F7F9FD;
-  }
-  
-  body {
-    padding: 8px;
-    background: var(--gray);
-  }
-  
-  * {
-    font-family: "Inter", sans-serif;
-  }
-  
-  header {
-    padding: 20px 10px;
-    border-radius: 8px 8px 0 0;
-  }
-  
-  .shadow {
-    box-shadow: 0px 0px 0px 1px rgba(152, 161, 178, 0.1), 0px 1px 4px rgba(69, 75, 87, 0.12);
-  }
-  
-  .wrapper {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 15% 85%;
-  }
-  
-  /*sidebar*/
-  
-  .sidebar {
-    border-radius: 8px 0 0 8px;
-    background: #fff;
-    height: 559px;
-  }
-  
-  ul {
-    display: contents;
-    list-style: none;
-  }
-  
-  ul li {
-    padding: 15px;
-    display: flex;
-  }
-  
-  ul li a {
-    margin-left: 15px;
-    color: #464F60;
-  }
-  
-  ul li a:active {
-  
-    border-right: 4px solid blue;
-    width: 155px;
-    border-radius: 4px 4px 4px 4px;
-  }
-  
-  .pa {
-    padding-left: 5px;
-  }
+  --gray: #F7F9FD;
+}
+
+body {
+  padding: 8px;
+  background: var(--gray);
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  padding: 20px 10px;
+  border-radius: 8px 8px 0 0;
+}
+
+.shadow {
+  box-shadow: 0px 0px 0px 1px rgba(152, 161, 178, 0.1), 0px 1px 4px rgba(69, 75, 87, 0.12);
+}
+
+.wrapper {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+
+/*sidebar*/
+
+.sidebar {
+  border-radius: 8px 0 0 8px;
+  background: #fff;
+  height: 559px;
+}
+
+ul {
+  display: contents;
+  list-style: none;
+}
+
+ul li {
+  padding: 15px;
+  display: flex;
+}
+
+ul li a {
+  margin-left: 15px;
+  color: #464F60;
+}
+
+ul li a:active {
+
+  border-right: 4px solid blue;
+  width: 155px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.pa {
+  padding-left: 5px;
+}
 
 /*conntenido*/
 
 
 .main {
-    padding: 0 10px;
-  }
-  
-  .main div {
-    background: #fff;
-  }
-  
-  .line {
-    border: 1px solid #E9EDF5;
-    border-radius: 1px;
-  }
-  
-  .filtro {
-    width: 25px;
-    background: #ffffff;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1),
-      0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 2px 5px rgba(89, 96, 120, 0.1);
-    border-radius: 6px;
-    margin-top: 10px;
-  }
-  
-  .filtro img {
-    margin-left: 4.5px;
-  }
-  
-  .ver {
-    margin-left: 5%;
-    margin-top: -36px;
-    display: flex
-  }
-  
-  table.dataTable.table-striped>tbody>tr:nth-of-type(2n+1) {
-    background-color: rgb(253, 253, 253);
-    margin-bottom: 0px;
-    background-color: #F9FAFC;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #464F60;
-  }
-  
-  table.dataTable.table-striped>tbody>tr:nth-of-type(2n+2) {
-    background-color: #F9FAFC;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #464F60;
-  }
-  
-  div.dataTables_wrapper div.dataTables_length label {
-    font-weight: normal;
-    text-align: left;
-    white-space: nowrap;
-  
-  }
-  
-  .dataTables_length {
-    display: none;
-  }
-  
-  div.dataTables_wrapper div.dataTables_filter label {
-    width: 320px;
-    height: 30px;
-    left: -760px;
-    top: -10px;
-  
-  }
-  
-  .sorting {
-    background: #F9FAFC;
-  }
-  
-  .container-FLUID {
-    margin-top: 0px;
-    margin-left: 0px;
-    display: block;
-  }
-  
-  table.table-bordered.dataTable th,
-  table.table-bordered.dataTable td {
-    border: none;
-    height: 34px;
-  }
-  
-  .tel {
-    padding: 0px 10px;
-    width: 98px;
-    height: 20px;
-    color: #4F5AED;
-    opacity: 90%;
-    background: #e9e9eb;
-    border-radius: 10px;
-  }
-  
-  /* PESTAÑA VER*/
-  
-  .ingre_content {
-    min-height: 860px;
-    margin: 10px;
-    padding: 15px 20px;
-    border: 1px solid;
-    border-radius: 5px;
-    border-color: #8080803b;
-  }
-  
-  /* PESTAÑA INGRESAR*/
-  .tab_content {
-    margin: 16px;
-  }
-  
-  .ingre_content {
-    min-height: 860px;
-    margin: 10px;
-    padding: 15px 20px;
-    border: 1px solid;
-    border-radius: 5px;
-    border-color: #8080803b;
-  }
-  
-  .form_label>label {
-    display: block;
-    margin-bottom: 15px;
-  }
-  
-  .btn {
-    background-color: #464F60;
-    color: white;
-    float: right;
-  }
+  padding: 0 0 0 10px;
+}
+
+.main div {
+  background: #fff;
+}
+
+.line {
+  border: 1px solid #E9EDF5;
+  border-radius: 1px;
+}
+
+.filtro {
+  width: 25px;
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1),
+    0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 2px 5px rgba(89, 96, 120, 0.1);
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.filtro img {
+  margin-left: 4.5px;
+}
+
+.ver {
+  margin-left: 5%;
+  margin-top: -36px;
+  display: flex
+}
+
+table.dataTable.table-striped>tbody>tr:nth-of-type(2n+1) {
+  background-color: rgb(253, 253, 253);
+  margin-bottom: 0px;
+  background-color: #F9FAFC;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #464F60;
+}
+
+table.dataTable.table-striped>tbody>tr:nth-of-type(2n+2) {
+  background-color: #F9FAFC;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #464F60;
+}
+
+div.dataTables_wrapper div.dataTables_length label {
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+
+}
+
+.dataTables_length {
+  display: none;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+  width: 320px;
+  height: 30px;
+  left: -760px;
+  top: -10px;
+
+}
+
+.sorting {
+  background: #F9FAFC;
+}
+
+.container-FLUID {
+  margin-top: 0px;
+  margin-left: 0px;
+  display: block;
+}
+
+table.table-bordered.dataTable th,
+table.table-bordered.dataTable td {
+  border: none;
+  height: 34px;
+}
+
+.tel {
+  padding: 0px 10px;
+  width: 98px;
+  height: 20px;
+  color: #4F5AED;
+  opacity: 90%;
+  background: #e9e9eb;
+  border-radius: 10px;
+}
+
+/* PESTAÑA VER*/
+
+.ingre_content {
+  min-height: 860px;
+  margin: 10px;
+  padding: 15px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #8080803b;
+}
+
+/* PESTAÑA INGRESAR*/
+.tab_content {
+  margin: 16px;
+}
+
+.ingre_content {
+  min-height: 860px;
+  margin: 10px;
+  padding: 15px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #8080803b;
+}
+
+.form_label>label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #464F60;
+  color: white;
+  float: right;
+}
