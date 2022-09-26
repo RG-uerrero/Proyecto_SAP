@@ -163,29 +163,21 @@ table.table-bordered.dataTable td {
   border-radius: 10px;
 }
 
+.tab-content{
+  border: 1px solid;
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  border-color: #3535353a;
+}
+
 /* PESTAÑA VER*/
 
-.ingre_content {
-  min-height: 860px;
-  margin: 10px;
-  padding: 15px 20px;
-  border: 1px solid;
-  border-radius: 5px;
-  border-color: #8080803b;
-}
+
 
 /* PESTAÑA INGRESAR*/
 .tab_content {
   margin: 16px;
-}
-
-.ingre_content {
-  min-height: 860px;
-  margin: 10px;
-  padding: 15px 20px;
-  border: 1px solid;
-  border-radius: 5px;
-  border-color: #8080803b;
 }
 
 .form_label>label {
@@ -200,14 +192,6 @@ table.table-bordered.dataTable td {
 }
 
 /* PESTAÑA CARGA EN BLOQUE*/
-
-.carga_content {
-  margin: 10px;
-  padding: 15px 20px;
-  border: 1px solid;
-  border-radius: 5px;
-  border-color: #8080803b;
-}
 
 hr {
   display: block;
