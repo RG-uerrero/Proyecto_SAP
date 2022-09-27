@@ -60,6 +60,7 @@ ul li a:active {
   padding-left: 5px;
 }
 
+
 /*conntenido*/
 
 
@@ -162,38 +163,137 @@ table.table-bordered.dataTable td {
   border-radius: 10px;
 }
 
-/* PESTAÑA VER*/
+/* CSS MODAL HISTORIA CLINICA*/
 
-.ingre_content {
-  min-height: 860px;
-  margin: 10px;
-  padding: 15px 20px;
-  border: 1px solid;
-  border-radius: 5px;
-  border-color: #8080803b;
+.modal fade show {
+  background: transparent;
 }
 
-/* PESTAÑA INGRESAR*/
-.tab_content {
-  margin: 16px;
+#modal-nav-sin-aprobar,
+#modal-nav-aprobados,
+#modal-nav-procesos-terminados {
+  background: transparent;
 }
 
-.ingre_content {
-  min-height: 860px;
-  margin: 10px;
-  padding: 15px 20px;
-  border: 1px solid;
-  border-radius: 5px;
-  border-color: #8080803b;
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  background: white !important;
 }
 
-.form_label>label {
-  display: block;
-  margin-bottom: 15px;
+label {
+  color: gray;
 }
 
-.btn {
-  background-color: #464F60;
+.info_title_consulta,
+.info_title_profesional,
+.info_title_paciente,
+.info_title_historia_clinica {
+  padding: 9px 0px 0px 16px;
+  margin-left: 7px;
+  margin-right: 7px;
+  background-color: #609cf5de !important;
   color: white;
-  float: right;
+}
+
+.info_title_consulta>button>label,
+.info_title_profesional>button>label,
+.info_title_paciente>button>label,
+.info_title_historia_clinica>button>label {
+  color: white;
+  cursor: pointer;
+}
+
+.info_title_consulta>button,
+.info_title_profesional>button,
+.info_title_paciente>button,
+.info_title_historia_clinica>button {
+  outline: none;
+  padding-right: 50%;
+}
+
+
+.title_button {
+  background: transparent;
+  border: none;
+  margin-bottom: 3px;
+}
+
+.info_subtitle {
+  padding: 1px 0px 0px 6px;
+  margin-left: 7px;
+  margin-right: 7px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #404c5a;
+  font-size: 18px;
+  border: 1px solid #cecece;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.info_subtitle>label,
+.info_subtitle_1>label {
+  color: #284f88de;
+}
+
+.info_subtitle_sub>label {
+  color: #2b5694de;
+}
+
+.info_subtitle_1 {
+  padding: 1px 0px 0px 6px;
+  margin-left: 7px;
+  margin-right: 7px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #404c5a;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.info_subtitle_sub {
+  margin-top: 30px;
+  margin-left: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.historia_seccion {
+  margin-top: 30px;
+}
+
+.info_informacion_consulta_content,
+.info_profesional_content,
+.info_paciente_content,
+.info_historia_clinica_content {
+  display: flex;
+  justify-content: center;
+  /*gap: 60px;*/
+  margin-top: 15px;
+  margin-bottom: 50px;
+  ;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  /*gap: 60px;*/
+  margin-top: 15px;
+}
+
+.content-hc {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+@media (min-width: 992px) {
+
+  .modal-lg,
+  .modal-xl {
+    max-width: 900px;
+  }
 }
