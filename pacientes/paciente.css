@@ -163,6 +163,42 @@ table.table-bordered.dataTable td {
   border-radius: 10px;
 }
 
+/* PESTAÑA VER*/
+
+.ingre_content {
+  min-height: 860px;
+  margin: 10px;
+  padding: 15px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #8080803b;
+}
+
+/* PESTAÑA INGRESAR*/
+.tab_content {
+  margin: 16px;
+}
+
+.ingre_content {
+  min-height: 860px;
+  margin: 10px;
+  padding: 15px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #8080803b;
+}
+
+.form_label>label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #464F60;
+  color: white;
+  float: right;
+}
+
 /* CSS MODAL HISTORIA CLINICA*/
 
 .modal fade show {
