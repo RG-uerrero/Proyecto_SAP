@@ -49,8 +49,7 @@ ul li a {
   color: #464F60;
 }
 
-ul li a:active {
-
+.active-item{
   border-right: 4px solid blue;
   width: 155px;
   border-radius: 4px 4px 4px 4px;
@@ -63,6 +62,13 @@ ul li a:active {
 
 /*conntenido*/
 
+.tab-content {
+  margin: 10px;
+  padding: 15px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #8080803b;
+}
 
 .main {
   padding: 0 0 0 10px;
@@ -165,28 +171,7 @@ table.table-bordered.dataTable td {
 
 /* PESTAÑA VER*/
 
-.ingre_content {
-  min-height: 860px;
-  margin: 10px;
-  padding: 15px 20px;
-  border: 1px solid;
-  border-radius: 5px;
-  border-color: #8080803b;
-}
-
 /* PESTAÑA INGRESAR*/
-.tab_content {
-  margin: 16px;
-}
-
-.ingre_content {
-  min-height: 860px;
-  margin: 10px;
-  padding: 15px 20px;
-  border: 1px solid;
-  border-radius: 5px;
-  border-color: #8080803b;
-}
 
 .form_label>label {
   display: block;
@@ -332,4 +317,45 @@ label {
   .modal-xl {
     max-width: 900px;
   }
+}
+
+/* carga en bloque*/
+
+.btn_car {
+  margin: 5px;
+  color: black;
+  border-radius: 7px;
+  border-width: 3px;
+  cursor: pointer;
+}
+
+.btn_azul {
+  border-color: #4355B1;
+  background-color: white;
+  color: #4355B1;
+}
+
+.btn_azul:hover {
+  border-color: #4355B1;
+  background: #4355B1;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn_gris {
+  border-color: #666666;
+  background-color: white;
+  color: #666666;
+}
+
+.btn_gris:hover {
+  border-color: #666666;
+  background: #666666;
+  color: white;
+  transition: 0.3s;
+}
+
+.botn {
+  background-color: #464F60;
+  color: white;
 }

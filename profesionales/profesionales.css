@@ -23,7 +23,7 @@ header {
 .wrapper {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 12% 88%;
 }
 
 /*sidebar*/
@@ -42,6 +42,8 @@ ul {
 ul li {
   padding: 15px;
   display: flex;
+  border-bottom: 1px solid #E9EDF5;
+  position: relative;
 }
 
 ul li a {
@@ -49,11 +51,9 @@ ul li a {
   color: #464F60;
 }
 
-ul li a:active {
+.active-item{
+  border-right: 8px solid #4362ff !important;
 
-  border-right: 4px solid blue;
-  width: 155px;
-  border-radius: 4px 4px 4px 4px;
 }
 
 .pa {
@@ -72,9 +72,10 @@ ul li a:active {
   background: #fff;
 }
 
-.line {
-  border: 1px solid #E9EDF5;
-  border-radius: 1px;
+ul li label{
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
 }
 
 .filtro {
@@ -164,11 +165,11 @@ table.table-bordered.dataTable td {
 }
 
 .tab-content{
-  border: 1px solid;
-  padding: 15px 20px;
   margin: 10px;
+  padding: 15px 20px;
+  border: 1px solid;
   border-radius: 5px;
-  border-color: #3535353a;
+  border-color: #8080803b;
 }
 
 /* CSS MODAL HISTORIA CLINICA*/
@@ -342,93 +343,28 @@ hr {
   cursor: pointer;
 }
 
-.btn_vio {
-  border-color: rgba(148, 0, 211, 0.5);
+.btn_azul {
+  border-color: #4355B1;
   background-color: white;
-  color: rgba(148, 0, 211);
+  color: #4355B1;
 }
 
-.btn_vio:hover {
-  border-color: rgba(148, 0, 211, 0.5);
-  background: rgba(148, 0, 211);
+.btn_azul:hover {
+  border-color: #4355B1;
+  background: #4355B1;
   color: white;
   transition: 0.3s;
 }
 
-.btn_ind {
+.btn_gris {
+  border-color: #666666;
   background-color: white;
-  border-color: rgba(75, 0, 130, 0.5);
-  color: rgba(75, 0, 130);
+  color: #666666;
 }
 
-.btn_ind:hover {
-  border-color: rgba(75, 0, 130, 0.5);
-  background: rgba(75, 0, 130);
-  color: white;
-  transition: 0.3s;
-}
-
-.btn_azu {
-  background-color: white;
-  border-color: #323bee;
-  color: #323bee;
-}
-
-.btn_azu:hover {
-  border-color: #323bee;
-  background: #323bee;
-  color: white;
-  transition: 0.3s;
-}
-
-.btn_ver {
-  background-color: white;
-  border-color: #008f39;
-  color: #008f39;
-}
-
-.btn_ver:hover {
-  border-color: #008f39;
-  background: #008f39;
-  color: rgba(0, 0, 0, 0.700);
-  transition: 0.3s;
-}
-
-.btn_ama {
-  background-color: rgba(255, 255, 255, 0.801);
-  border-color: #efd83d;
-  color: #efd83d;
-}
-
-.btn_ama:hover {
-  border-color: #efd83d;
-  background: #efd83d;
-  color: rgba(0, 0, 0, 0.700);
-  transition: 0.3s;
-}
-
-.btn_nar {
-  background-color: white;
-  border-color: rgba(255, 127, 0, 0.7);
-  color: rgba(255, 127, 0, 0.7);
-}
-
-.btn_nar:hover {
-  border-color: rgba(255, 127, 0, 0.7);
-  background-color: rgba(255, 127, 0);
-  color: white;
-  transition: 0.3s;
-}
-
-.btn_roj {
-  background-color: white;
-  border-color: rgba(255, 0, 0, 0.7);
-  color: rgba(255, 0, 0, 0.7);
-}
-
-.btn_roj:hover {
-  border-color: rgba(255, 0, 0, 0.7);
-  background-color: rgba(255, 0, 0);
+.btn_gris:hover {
+  border-color: #666666;
+  background: #666666;
   color: white;
   transition: 0.3s;
 }
@@ -438,14 +374,11 @@ hr {
   color: white;
 }
 
-.modal-content {
-  width: 550px;
-}
 
 /*Carga*/
 
 .main div {
-  background: transparent;
+  background: white;
 }
 
 .modal-header,
