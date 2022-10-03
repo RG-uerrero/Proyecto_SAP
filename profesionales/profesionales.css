@@ -43,17 +43,28 @@ ul li {
   padding: 15px;
   display: flex;
   border-bottom: 1px solid #E9EDF5;
-  position: relative;
 }
+
+.siderbar_label{
+  position: relative;
+  width: 100%;
+}
+
 
 ul li a {
   margin-left: 15px;
   color: #464F60;
 }
 
+
+ul li label{
+  position: absolute;
+  left: 15px;
+  cursor: pointer;
+}
+
 .active-item{
   border-right: 8px solid #4362ff !important;
-
 }
 
 .pa {
@@ -70,12 +81,6 @@ ul li a {
 
 .main div {
   background: #fff;
-}
-
-ul li label{
-  position: absolute;
-  right: 12px;
-  cursor: pointer;
 }
 
 .filtro {
@@ -373,7 +378,7 @@ hr {
   background-color: #464F60;
   color: white;
 }
-
+ª
 
 /*Carga*/
 
