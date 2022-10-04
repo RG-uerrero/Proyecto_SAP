@@ -201,10 +201,9 @@
                                                     <div class="modal-header">
                                                         <h5 class="modal-title" id="exampleModalLabel">Modificar
                                                             Información</h5>
-                                                        <button type="button" class="close" data-dismiss="modal"
-                                                            aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">×</span>
+                                                            </button>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="info_informacion_consulta">
@@ -219,21 +218,188 @@
                                                                 class="row info_informacion_consulta_content collapse show">
                                                                 <div class="row">
                                                                     <div class="content">
-                                                                        <div class="col-4">
-                                                                            <label for="#">Fecha de Cita:</label>
-                                                                            <input name="cita-fecha-de-cita"
-                                                                                class="form-control" type="date">
-                                                                        </div>
-                                                                        <div class="col-4">
-                                                                            <label for="#">Desde:</label>
-                                                                            <input name="cita-desde"
-                                                                                class="form-control" type="date">
-                                                                        </div>
-                                                                        <div class="col-4">
-                                                                            <label for="#">Hasta:</label>
-                                                                            <input name="cita-hasta"
-                                                                                class="form-control" type="date">
-                                                                        </div>
+                                                                        <form class="row">
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Nombre</label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Fecha de Nacimiento</label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Email</label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Tipo Documento</label>
+                                                                                    <select name="document" id="document" class="form-control">
+                                                                                        <option value=""></option>
+                                                                                        <option value="cc">Cédula de Ciudadanía</option>
+                                                                                        <option value="ce">Cédula de Extranjería</option>
+                                                                                        <option value="ps">Pasaporte</option>
+                                                                                        <option value="pep">Permiso Especial de Permanencia</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Departamento</label>
+                                                                                    <select type="text" id="departament" class="form-control">
+                                                                                        <option value="">Seleccione Departamento</option>
+                                                                                        <option value="ama">Amazonas</option>
+                                                                                        <option value="ant">Antioquia</option>
+                                                                                        <option value="ara">Arauca</option>
+                                                                                        <option value="arc">Archipielago de San Andres, Providencia</option>
+                                                                                        <option value="atl">Atlántico</option>
+                                                                                        <option value="bog">Bogotá</option>
+                                                                                        <option value="bol">Bolívar</option>
+                                                                                        <option value="boy">Boyacá</option>
+                                                                                        <option value="cal">Caldas</option>
+                                                                                        <option value="caq">Caquetá</option>
+                                                                                        <option value="cas">Casanare</option>
+                                                                                        <option value="cau">Cauca</option>
+                                                                                        <option value="ces">Cesar</option>
+                                                                                        <option value="cho">Chocó</option>
+                                                                                        <option value="cor">Córdoba</option>
+                                                                                        <option value="cun">Cundinamarca</option>
+                                                                                        <option value="guai">Guainía</option>
+                                                                                        <option value="guav">Guaviare</option>
+                                                                                        <option value="hui">Huila</option>
+                                                                                        <option value="gua">La Guajira</option>
+                                                                                        <option value="mag">Magdalena</option>
+                                                                                        <option value="met">Meta</option>
+                                                                                        <option value="nar">Nariño</option>
+                                                                                        <option value="nor">Norte de Santander</option>
+                                                                                        <option value="put">Putumayo</option>
+                                                                                        <option value="qui">Quindío</option>
+                                                                                        <option value="ris">Risaralda</option>
+                                                                                        <option value="sana">San Andrés y Providencia</option>
+                                                                                        <option value="sant">Santander</option>
+                                                                                        <option value="suc">Sucre</option>
+                                                                                        <option value="tol">Tolima</option>
+                                                                                        <option value="val">Valle del Cauca</option>
+                                                                                        <option value="vau">Vaupés</option>
+                                                                                        <option value="vic">Vichada</option>
+                                        
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Ciudades</label>
+                                                                                    <select class="form-control" id="cities">
+                                                                                        <option value="">Seleccione Ciudad</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Celular</label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Genero</label>
+                                                                                    <select name="Genero" id="Genero" class="form-control">
+                                                                                        <option value=""></option>
+                                                                                        <option value="mas">Masculino</option>
+                                                                                        <option value="fem">Femenino</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Dirección</label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-3">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Foto</label>
+                                                                                    <div class="photo">
+                                                                                        <img src="https://www.way.com.co/convenios/no-foto.jpg"
+                                                                                            class="gambar img-responsive img-thumbnail" id="item-img-output"
+                                                                                            style="width:350px; height: 350px;">
+                                                                                        <button class="btn btn-inverse waves-effect waves-light ingresando"
+                                                                                            type="file" name="img">Subir Foto</button>
+                                                                                    </div>
+                                        
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Área de trabajo</label>
+                                                                                    <select type="text" id="professions" class="form-control">
+                                                                                        <option value="">Seleccione Profesión</option>
+                                                                                        <option value="bac">Bacteriología</option>
+                                                                                        <option value="en_aux">Enfermería auxiliar</option>
+                                                                                        <option value="en_pro">Enfermería profesional</option>
+                                                                                        <option value="fis">Fisioterapia</option>
+                                                                                        <option value="fono">Fonoaudiología</option>
+                                                                                        <option value="gero">Gerontología</option>
+                                                                                        <option value="inye">Inyectología</option>
+                                                                                        <option value="med_esp">Medicina especializada</option>
+                                                                                        <option value="med_gen">Medicina general</option>
+                                                                                        <option value="nut_die">Nutrición y dietética</option>
+                                                                                        <option value="odon">Odontología</option>
+                                                                                        <option value="opto">Optometría</option>
+                                                                                        <option value="prac_med">Practicante de Medicina</option>
+                                                                                        <option value="prac_psico">Practicante de Psicología</option>
+                                                                                        <option value="psico">Psicología </option>
+                                                                                        <option value="ter_ocu">Terapia ocupacional</option>
+                                                                                        <option value="ter_res">Terapia respiratoria</option>
+                                                                                    </select>
+                                                                                    <div>
+                                                                                        <label for="">Especialidad</label>
+                                                                                        <select name="especializacion" id="area" class="form-control"></select>
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <label for="">Duracion de la Consulta</label>
+                                                                                        <select name="duracion" id="duracion" class="form-control">
+                                                                                            <option value="">Seleccione Duración</option>
+                                                                                            <option value="">20 minutos</option>
+                                                                                            <option value="">30 minutos</option>
+                                                                                            <option value="">40 minutos</option>
+                                                                                            <option value="">50 minutos</option>
+                                                                                            <option value="">60 minutos</option>
+                                                                                            <option value="">90 minutos</option>
+                                                                                            <option value="">120 minutos</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <label for="">Formulario registro clínico:</label>
+                                                                                        <select name="Genero" id="Genero" class="form-control">
+                                                                                            <option value="">Seleccione una opción</option>
+                                                                                            <option value="">Historia Clinica Psicología Menor de Edad
+                                                                                            </option>
+                                                                                            <option value="">Historia Clinica Psicología Mayor de Edad
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                    <div class="form-check">
+                                                                                        <div>
+                                                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                                                id="defaultCheck1">
+                                                                                            <label class="form-check-label" for="defaultCheck1">
+                                                                                                Requiere Validador
+                                                                                            </label>
+                                                                                            <button class="btn btn-inverse waves-effect waves-light ingresando"
+                                                                                                type="button" onclick="alert(2+2)">REALIZAR OPERACIÓN</button>
+                                                                                        </div>
+                                        
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -436,7 +602,6 @@
                                                     <button class="btn btn-inverse waves-effect waves-light ingresando"
                                                         type="button" onclick="alert(2+2)">REALIZAR OPERACIÓN</button>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
