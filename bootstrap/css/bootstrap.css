@@ -5524,7 +5524,7 @@ a.badge-dark:hover, a.badge-dark:focus {
   border-color: #1b1e21;
 }
 
-.close {
+.close{
   float: right;
   font-size: 1.5rem;
   font-weight: 700;

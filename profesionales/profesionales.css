@@ -26,6 +26,16 @@ header {
   grid-template-columns: 12% 88%;
 }
 
+/*Ingresar*/
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+.form-control{
+  margin-bottom: 15px;
+}
+
 /*sidebar*/
 
 .sidebar {
@@ -35,6 +45,7 @@ header {
 }
 
 ul {
+  
   display: contents;
   list-style: none;
 }
@@ -177,7 +188,7 @@ table.table-bordered.dataTable td {
   border-color: #8080803b;
 }
 
-/* CSS MODAL HISTORIA CLINICA*/
+/* CSS MODAL PREOFESIONALES*/
 
 .modal fade show {
   background: transparent;

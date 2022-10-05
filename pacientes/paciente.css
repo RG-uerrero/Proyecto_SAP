@@ -169,6 +169,16 @@ table.table-bordered.dataTable td {
   border-radius: 10px;
 }
 
+/*Ingresar*/
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+.form-control{
+  margin-bottom: 15px;
+}
+
 /* PESTAÑA VER*/
 
 /* PESTAÑA INGRESAR*/
