@@ -61,7 +61,7 @@ ul li a:active {
 }
 
 
-/*conntenido*/
+/*contenido*/
 
 .tab-content{
   margin: 10px;
@@ -181,7 +181,10 @@ table.table-bordered.dataTable td {
 .modal fade show {
   background: transparent;
 }
-#modal-nav-sin-aprobar, #modal-nav-aprobados, #modal-nav-procesos-terminados{
+
+#modal-nav-sin-aprobar,
+#modal-nav-aprobados,
+#modal-nav-procesos-terminados {
   background: transparent;
 }
 

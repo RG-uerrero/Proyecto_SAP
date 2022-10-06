@@ -23,7 +23,7 @@
 
     <!--datables estilo bootstrap 4 CSS-->
     <link rel="stylesheet" type="text/css" href="/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="profesionales.css">
+    <link rel="stylesheet" href="../profesionales/profesionales.css">
     <title>Sap</title>
 </head>
 
@@ -84,6 +84,8 @@
                 <div class="filtro">
                     <img class="filter" src="../icons/filter.svg">
                 </div>
+
+                <!-- NABVAR -->
 
                 <nav class="ver">
                     <div class="nav nav-tabs " id="nav-tab" role="tablist">
@@ -187,13 +189,14 @@
                                                     <td><button type="button" class="btn btn-primary"
                                                             data-toggle="modal" data-target="#modal-nav-sin-aprobar">
                                                             +
-                                                        </button></td>
+                                                        </button>
+                                                    </td>
                                                 </tr>
-
                                             </tbody>
                                         </table>
 
                                         <!-- Modal -->
+
                                         <div class="modal fade" id="modal-nav-sin-aprobar" tabindex="-1" role="dialog"
                                             aria-labelledby="historia_clinicaLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-lg" role="document">
@@ -415,6 +418,15 @@
                                                                             <label for="">Email</label>
                                                                             <input type="text" class="form-control">
                                                                         </div>
+                                                                        <div class="form-group">
+                                                                            <label for="">Genero</label>
+                                                                            <select name="Genero" id="Genero"
+                                                                                class="form-control">
+                                                                                <option value=""></option>
+                                                                                <option value="mas">Masculino</option>
+                                                                                <option value="fem">Femenino</option>
+                                                                            </select>
+                                                                        </div>
                                                                         <label for="">Área de
                                                                             trabajo</label>
                                                                         <select type="text" id="professions"
@@ -473,21 +485,34 @@
                                                                                 Terapia
                                                                                 respiratoria</option>
                                                                         </select>
-                                                                        <div class="col-6">
+                                                                        <div class="form-group">
                                                                             <label for="">Especialidad</label>
                                                                             <select name="especializacion" id="area"
                                                                                 class="form-control"></select>
                                                                         </div>
                                                                         <div class="form-check">
-                                                                            <div>
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" value=""
-                                                                                    id="defaultCheck1">
-                                                                                <label class="form-check-label"
-                                                                                    for="defaultCheck1">
-                                                                                    Requiere Validador
-                                                                                </label>
-                                                                            </div>
+                                                                            <input class="form-check-input"
+                                                                                type="checkbox" value=""
+                                                                                id="defaultCheck1">
+                                                                            <label class="form-check-label"
+                                                                                for="defaultCheck1">
+                                                                                Requiere Validador
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label
+                                                                                class="form-check-label">Validador</label>
+                                                                            <select name="Genero" id="Genero"
+                                                                                class="form-control">
+                                                                                <option value="">Seleccionar una Opcion
+                                                                                </option>
+                                                                                <option value="mas">José Alexánder
+                                                                                    Estrada Hernández</option>
+                                                                                <option value="fem">Julio Orozco
+                                                                                </option>
+                                                                                <option value="mas">Marlyn Patricia
+                                                                                    Conde Gutiérrez</option>
+                                                                            </select>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12">
@@ -515,26 +540,25 @@
                                                                     </div>
                                                                     <div class="col-6">
                                                                         <div class="form-group">
-                                                                            <label for="">Especialidad</label>
-                                                                            <input type="password">
+                                                                            <label for="">Contraseña</label>
+                                                                            <input class="form-control" type="password">
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-6">
                                                                         <div class="form-group">
-                                                                            <label for="">Especialidad</label>
-                                                                            <input type="password">
+                                                                            <label for=""> Confirmar Contraseña</label>
+                                                                            <input class="form-control" type="password">
                                                                         </div>
                                                                     </div>
                                                                 </div>
-
                                                             </div>
                                                             </form>
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary"
-                                                                data-dismiss="modal">Close</button>
-                                                            <button type="button" class="btn btn-primary">Save
-                                                                changes</button>
+                                                                data-dismiss="modal">Bloquear</button>
+                                                            <button type="button" class="btn btn-primary">
+                                                                Modificar</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1317,11 +1341,7 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

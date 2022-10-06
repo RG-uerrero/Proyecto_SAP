@@ -20,10 +20,11 @@
 
     <!--datables CSS básico-->
     <link rel="stylesheet" type="text/css" href="../datatables/datatables.min.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 
     <!--datables estilo bootstrap 4 CSS-->
     <link rel="stylesheet" type="text/css" href="/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="paciente.css">
+    <link rel="stylesheet" href="../pacientes/paciente.css">
     <title>Sap</title>
 </head>
 
@@ -203,7 +204,7 @@
                                                             Información</h5>
                                                         <button type="button" class="close" data-dismiss="modal"
                                                             aria-label="Close">
-                                                            <span aria-hidden="true">×</span>
+                                                            <span aria-hidden="true">&times;</span>
                                                         </button>
                                                     </div>
                                                     <div class="modal-body">
@@ -229,15 +230,7 @@
                                                                             </div>
                                                                             <div class="col-6">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Fecha de
-                                                                                        Nacimiento</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-6">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Email</label>
+                                                                                    <label for="">Apellido</label>
                                                                                     <input type="text"
                                                                                         class="form-control">
                                                                                 </div>
@@ -259,6 +252,28 @@
                                                                                             Especial de Permanencia
                                                                                         </option>
                                                                                     </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Documento</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Fecha de
+                                                                                        Nacimiento</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Celular</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-6">
@@ -353,175 +368,74 @@
                                                                             </div>
                                                                             <div class="col-6">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Celular</label>
+                                                                                    <label for="">Dirección</label>
                                                                                     <input type="text"
                                                                                         class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-6">
                                                                                 <div class="form-group">
-                                                                                    <label for="">Genero</label>
-                                                                                    <select name="Genero" id="Genero"
-                                                                                        class="form-control">
-                                                                                        <option value=""></option>
-                                                                                        <option value="mas">Masculino
-                                                                                        </option>
-                                                                                        <option value="fem">Femenino
-                                                                                        </option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-12">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Dirección</label>
+                                                                                    <label for="">Email</label>
                                                                                     <input type="text"
                                                                                         class="form-control">
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-3">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Foto</label>
-                                                                                    <div class="photo">
-                                                                                        <img src="https://www.way.com.co/convenios/no-foto.jpg"
-                                                                                            class="gambar img-responsive img-thumbnail"
-                                                                                            id="item-img-output"
-                                                                                            style="width:350px; height: 350px;">
-                                                                                        <button
-                                                                                            class="btn btn-inverse waves-effect waves-light ingresando"
-                                                                                            type="file" name="img">Subir
-                                                                                            Foto</button>
-                                                                                    </div>
-
-                                                                                </div>
+                                                                            <div class="col-6">
+                                                                                <label for="">Genero</label>
+                                                                                <select name="Genero" id="Genero"
+                                                                                    class="form-control">
+                                                                                    <option value=""></option>
+                                                                                    <option value="mas">Masculino
+                                                                                    </option>
+                                                                                    <option value="fem">Femenino
+                                                                                    </option>
+                                                                                </select>
                                                                             </div>
-                                                                            <div class="col-9">
-                                                                                <div class="form-group">
-                                                                                    <label for="">Área de
-                                                                                        trabajo</label>
-                                                                                    <select type="text" id="professions"
-                                                                                        class="form-control">
-                                                                                        <option value="">Seleccione
-                                                                                            Profesión</option>
-                                                                                        <option value="bac">
-                                                                                            Bacteriología</option>
-                                                                                        <option value="en_aux">
-                                                                                            Enfermería auxiliar</option>
-                                                                                        <option value="en_pro">
-                                                                                            Enfermería profesional
-                                                                                        </option>
-                                                                                        <option value="fis">Fisioterapia
-                                                                                        </option>
-                                                                                        <option value="fono">
-                                                                                            Fonoaudiología</option>
-                                                                                        <option value="gero">
-                                                                                            Gerontología</option>
-                                                                                        <option value="inye">
-                                                                                            Inyectología</option>
-                                                                                        <option value="med_esp">Medicina
-                                                                                            especializada</option>
-                                                                                        <option value="med_gen">Medicina
-                                                                                            general</option>
-                                                                                        <option value="nut_die">
-                                                                                            Nutrición y dietética
-                                                                                        </option>
-                                                                                        <option value="odon">Odontología
-                                                                                        </option>
-                                                                                        <option value="opto">Optometría
-                                                                                        </option>
-                                                                                        <option value="prac_med">
-                                                                                            Practicante de Medicina
-                                                                                        </option>
-                                                                                        <option value="prac_psico">
-                                                                                            Practicante de Psicología
-                                                                                        </option>
-                                                                                        <option value="psico">Psicología
-                                                                                        </option>
-                                                                                        <option value="ter_ocu">Terapia
-                                                                                            ocupacional</option>
-                                                                                        <option value="ter_res">Terapia
-                                                                                            respiratoria</option>
-                                                                                    </select>
-                                                                                    <div>
-                                                                                        <label
-                                                                                            for="">Especialidad</label>
-                                                                                        <select name="especializacion"
-                                                                                            id="area"
-                                                                                            class="form-control"></select>
-                                                                                    </div>
-                                                                                    <div class="form-group">
-                                                                                        <label for="">Duracion de la
-                                                                                            Consulta</label>
-                                                                                        <select name="duracion"
-                                                                                            id="duracion"
-                                                                                            class="form-control">
-                                                                                            <option value="">Seleccione
-                                                                                                Duración</option>
-                                                                                            <option value="">20 minutos
-                                                                                            </option>
-                                                                                            <option value="">30 minutos
-                                                                                            </option>
-                                                                                            <option value="">40 minutos
-                                                                                            </option>
-                                                                                            <option value="">50 minutos
-                                                                                            </option>
-                                                                                            <option value="">60 minutos
-                                                                                            </option>
-                                                                                            <option value="">90 minutos
-                                                                                            </option>
-                                                                                            <option value="">120 minutos
-                                                                                            </option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                    <div class="form-group">
-                                                                                        <label for="">Formulario
-                                                                                            registro clínico:</label>
-                                                                                        <select name="Genero"
-                                                                                            id="Genero"
-                                                                                            class="form-control">
-                                                                                            <option value="">Seleccione
-                                                                                                una opción</option>
-                                                                                            <option value="">Historia
-                                                                                                Clinica Psicología Menor
-                                                                                                de Edad
-                                                                                            </option>
-                                                                                            <option value="">Historia
-                                                                                                Clinica Psicología Mayor
-                                                                                                de Edad
-                                                                                            </option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                    <div class="form-check">
-                                                                                        <div>
-                                                                                            <input
-                                                                                                class="form-check-input"
-                                                                                                type="checkbox" value=""
-                                                                                                id="defaultCheck1">
-                                                                                            <label
-                                                                                                class="form-check-label"
-                                                                                                for="defaultCheck1">
-                                                                                                Requiere Validador
-                                                                                            </label>
-                                                                                            <button
-                                                                                                class="btn btn-inverse waves-effect waves-light ingresando"
-                                                                                                type="button"
-                                                                                                onclick="alert(2+2)">REALIZAR
-                                                                                                OPERACIÓN</button>
-                                                                                        </div>
-
-                                                                                    </div>
-                                                                                </div>
+                                                                            <div class="col-6">
+                                                                                <label for="">EPS</label>
+                                                                                <select name="Genero" id="Genero"
+                                                                                    class="form-control">
+                                                                                    <option value=""></option>
+                                                                                    <option value="mas">Masculino
+                                                                                    </option>
+                                                                                    <option value="fem">Femenino
+                                                                                    </option>
+                                                                                </select>
                                                                             </div>
-                                                                        </form>
                                                                     </div>
+                                                                    <div class="col-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Foto</label>
+                                                                            <div class="photo">
+                                                                                <img src="../pacientes/no-firma.jpg"
+                                                                                    class="gambar img-responsive img-thumbnail"
+                                                                                    id="item-img-output"
+                                                                                    style="width:200px; height: 150px;">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Contraseña</label>
+                                                                            <input class="form-control" type="password">
+                                                                            <div class="form-group">
+                                                                                <label for=""> Confirmar
+                                                                                    Contraseña</label>
+                                                                                <input class="form-control"
+                                                                                    type="password">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>                                                                
                                                                 </div>
                                                             </div>
+                                                            </form>
                                                         </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary"
-                                                            data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save
-                                                            changes</button>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Bloquear</button>
+                                                            <button type="button" class="btn btn-primary">
+                                                                Modificar</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
