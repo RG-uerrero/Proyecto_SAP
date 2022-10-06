@@ -129,7 +129,6 @@ $('#departament').change(function (e) {
     cities[$(this).val()].map(city => {
         $('#cities').append(`<option value="${city}">${city}</option>`);
     })
-
 })
 
 const area = {
