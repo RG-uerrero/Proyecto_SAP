@@ -229,6 +229,11 @@ table.table-bordered.dataTable td {
   float: right;
 }
 
+.photo_cont{
+  width:200px; 
+  height: 150px;
+}
+
 /* CSS MODAL HISTORIA CLINICA*/
 
 .modal fade show {
