@@ -225,23 +225,25 @@
                                                                                 <div class="form-group">
                                                                                     <label for="">Nombre</label>
                                                                                     <input type="text"
+                                                                                        name="nombre-paciente-ig"
                                                                                         class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-6">
                                                                                 <div class="form-group">
                                                                                     <label for="">Apellido</label>
-                                                                                    <input type="text"
+                                                                                    <input name="apellido-paciente-ig"
+                                                                                        type="text"
                                                                                         class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-6">
                                                                                 <div class="form-group">
                                                                                     <label for="">Tipo Documento</label>
-                                                                                    <select name="document"
+                                                                                    <select name="tipo-documento-ig"
                                                                                         id="document"
                                                                                         class="form-control">
-                                                                                        <option value=""></option>
+                                                                                        <option value="none"></option>
                                                                                         <option value="cc">Cédula de
                                                                                             Ciudadanía</option>
                                                                                         <option value="ce">Cédula de
@@ -257,7 +259,8 @@
                                                                             <div class="col-6">
                                                                                 <div class="form-group">
                                                                                     <label for="">Documento</label>
-                                                                                    <input type="text"
+                                                                                    <input name="documento-paciente-ig"
+                                                                                        type="text"
                                                                                         class="form-control">
                                                                                 </div>
                                                                             </div>
@@ -265,23 +268,28 @@
                                                                                 <div class="form-group">
                                                                                     <label for="">Fecha de
                                                                                         Nacimiento</label>
-                                                                                    <input type="text"
+                                                                                    <input
+                                                                                        name="fnacimiento-paciente-ig"
+                                                                                        type="text"
                                                                                         class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-6">
                                                                                 <div class="form-group">
                                                                                     <label for="">Celular</label>
-                                                                                    <input type="text"
+                                                                                    <input name="telefono-paciente-ig"
+                                                                                        type="text"
                                                                                         class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-6">
                                                                                 <div class="form-group">
                                                                                     <label for="">Departamento</label>
-                                                                                    <select type="text" id="departament"
+                                                                                    <select
+                                                                                        name="departamento-paciente-ig"
+                                                                                        type="text" id="departament"
                                                                                         class="form-control">
-                                                                                        <option value="">Seleccione
+                                                                                        <option value="none">Seleccione
                                                                                             Departamento</option>
                                                                                         <option value="ama">Amazonas
                                                                                         </option>
@@ -359,24 +367,28 @@
                                                                             <div class="col-6">
                                                                                 <div class="form-group">
                                                                                     <label for="">Ciudades</label>
-                                                                                    <select class="form-control"
+                                                                                    <selectv name="ciudad-paciente-ig"
+                                                                                        class="form-control"
                                                                                         id="cities">
-                                                                                        <option value="">Seleccione
+                                                                                        <option value="ciudad">
+                                                                                            Seleccione
                                                                                             Ciudad</option>
-                                                                                    </select>
+                                                                                        </select>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-6">
                                                                                 <div class="form-group">
                                                                                     <label for="">Dirección</label>
-                                                                                    <input type="text"
+                                                                                    <input name="direccion-paciente-ig"
+                                                                                        type="text"
                                                                                         class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-6">
                                                                                 <div class="form-group">
                                                                                     <label for="">Email</label>
-                                                                                    <input type="text"
+                                                                                    <input name="email-paciente-ig"
+                                                                                        type="text"
                                                                                         class="form-control">
                                                                                 </div>
                                                                             </div>
@@ -384,7 +396,7 @@
                                                                                 <label for="">Genero</label>
                                                                                 <select name="Genero" id="Genero"
                                                                                     class="form-control">
-                                                                                    <option value=""></option>
+                                                                                    <option value="none"></option>
                                                                                     <option value="mas">Masculino
                                                                                     </option>
                                                                                     <option value="fem">Femenino
@@ -393,9 +405,9 @@
                                                                             </div>
                                                                             <div class="col-6">
                                                                                 <label for="">EPS</label>
-                                                                                <select name="Genero" id="Genero"
+                                                                                <select name="eps-paciente-ig" id="EPS"
                                                                                     class="form-control">
-                                                                                    <option value=""></option>
+                                                                                    <option value="none"></option>
                                                                                     <option value="mas">Masculino
                                                                                     </option>
                                                                                     <option value="fem">Femenino
@@ -407,7 +419,8 @@
                                                                         <div class="form-group">
                                                                             <label for="">Foto</label>
                                                                             <div class="photo_cont">
-                                                                                <img src="../pacientes/no-firma.jpg"
+                                                                                <img name="foto-paciente-ig"
+                                                                                    src="../pacientes/no-firma.jpg"
                                                                                     class="gambar img-responsive img-thumbnail"
                                                                                     id="item-img-output">
                                                                             </div>
@@ -416,15 +429,18 @@
                                                                     <div class="col-6">
                                                                         <div class="form-group">
                                                                             <label for="">Contraseña</label>
-                                                                            <input class="form-control" type="password">
+                                                                            <input name-="contrasena-paciente-ig"
+                                                                                class="form-control" type="password">
                                                                             <div class="form-group">
                                                                                 <label for=""> Confirmar
                                                                                     Contraseña</label>
-                                                                                <input class="form-control"
+                                                                                <input
+                                                                                    name="confirmar-contrasena-paciente-ig"
+                                                                                    class="form-control"
                                                                                     type="password">
                                                                             </div>
                                                                         </div>
-                                                                    </div>                                                                
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             </form>
