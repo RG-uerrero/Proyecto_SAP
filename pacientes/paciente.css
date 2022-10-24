@@ -23,7 +23,7 @@ header {
 .wrapper {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 12% 88%;
 }
 
 /*sidebar*/
@@ -35,6 +35,7 @@ header {
 }
 
 ul {
+  
   display: contents;
   list-style: none;
 }
@@ -42,17 +43,29 @@ ul {
 ul li {
   padding: 15px;
   display: flex;
+  border-bottom: 1px solid #E9EDF5;
 }
+
+.siderbar_label{
+  position: relative;
+  width: 100%;
+}
+
 
 ul li a {
   margin-left: 15px;
   color: #464F60;
 }
 
-.active-item {
-  border-right: 4px solid blue;
-  width: 155px;
-  border-radius: 4px 4px 4px 4px;
+
+ul li label{
+  position: absolute;
+  left: 15px;
+  cursor: pointer;
+}
+
+.active-item{
+  border-right: 8px solid #4362ff !important;
 }
 
 .pa {
