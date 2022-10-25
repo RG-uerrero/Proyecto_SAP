@@ -82,9 +82,7 @@ ul li label{
   padding-left: 5px;
 }
 
-
 /*conntenido*/
-
 
 .main {
   padding: 0 0 0 10px;
@@ -325,7 +323,7 @@ label {
 
 /* PESTAÑA VER*/
 
-* PESTAÑA INGRESAR*/
+/* PESTAÑA INGRESAR*/
 .tab_content {
   margin: 16px;
 }
@@ -333,12 +331,6 @@ label {
 .form_label>label {
   display: block;
   margin-bottom: 15px;
-}
-
-.btn {
-  background-color: #464F60;
-  color: white;
-  float: right;
 }
 
 /* PESTAÑA CARGA EN BLOQUE*/

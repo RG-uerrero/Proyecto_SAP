@@ -43,7 +43,7 @@
   ul li {
     padding: 15px;
     display: flex;
-    border-bottom: 1px solid #E9EDF5;
+    border-bottom: 0px solid #E9EDF5;
   }
   
   .siderbar_label{
