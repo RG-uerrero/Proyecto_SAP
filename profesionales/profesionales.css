@@ -36,14 +36,12 @@ header {
   margin-bottom: 15px;
 }
 
-
-
 /*sidebar*/
 
 .sidebar {
   border-radius: 8px 0 0 8px;
   background: #fff;
-  height: 559px;
+  height: 100%;
 }
 
 ul {
