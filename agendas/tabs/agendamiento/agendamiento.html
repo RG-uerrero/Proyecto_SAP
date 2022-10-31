@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- google fonts -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <!-- dataTable -->
+
+    <link rel="stylesheet" type="text/css" href="../../../Datatables/DataTables-1.12.1/css/dataTables.bootstrap.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+
+    <!--datables CSS básico-->
+    <link rel="stylesheet" type="text/css" href="../../../datatables/datatables.min.css" />
+    
+    <!--datables estilo bootstrap 4 CSS-->
+    <link rel="stylesheet" type="text/css" href="../..//datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../agendamiento/agendamiento.css">
+    <title>Sap</title>
+</head>
+
+<body>
+    <header class="shadow">
+        <h1>SAP</h1>
+    </header>
+    <div class="wrapper">
+        <div class="sidebar shadow">
+            <ul>
+                <a href="../../../profesionales/profesionales.html">
+                    <li class="line">
+                        <div class="siderbar_img">
+                            <img src="../../../icons/profesionales 1.svg">
+                        </div>
+                        <div class="siderbar_label">
+                            <label for="">Profesionales</label>
+                        </div>
+                    </li>
+                </a>
+                <a href="../../../pacientes/paciente.html">
+                    <li class="line">
+                        <img class="pa" src="../../../icons/medico.svg">
+                        <div class="siderbar_label">
+                            <label for="">Pacientes</label>
+                        </div>
+                    </li>
+                </a>
+                <li class="line">
+                    <img class="pa" src="../../../icons/agenda.svg">
+                    <div class="siderbar_label">
+                        <label style="width: 100%;" style="width: 100%;"  data-toggle="collapse" href="#collapseAgenda" role="button" aria-expanded="false"
+                            aria-controls="collapseExample" for="">Agendas</label>
+                    </div>
+
+
+                </li>
+                <div class="collapse-show" id="collapseAgenda">
+                <a href="../agendamiento/agendamiento.html">
+                   <div class="collapse-items active-item">
+                    <img class="pa" src="../../../icons/agenda.svg">
+                    <div class="siderbar_label">
+                      
+                        <label  data-toggle="collapse" href="#collapseAgenda" role="button" aria-expanded="false"
+                            aria-controls="collapseExample" for="">Agendamiento</label>
+
+                    </div>
+                   </div>
+                </a>
+                <a href="../consultas/consultas.html">
+                    <div class="collapse-items">
+                     <img class="pa" src="../../../icons/agenda.svg">
+                
+                     <div class="siderbar_label">
+                       
+                         <label data-toggle="collapse" href="#collapseAgenda" role="button" aria-expanded="false"
+                             aria-controls="collapseExample" for="">Consultas</label>
+ 
+                     </div>
+                    </div>
+                 </a>
+                 <a href="../operador/operador.html">
+                    <div class="collapse-items">
+                     <img class="pa" src="../../../icons/agenda.svg">
+                     <div class="siderbar_label">
+                       
+                         <label data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                             aria-controls="collapseExample" for="">Operador</label>
+ 
+                     </div>
+                    </div>
+                 </a>
+                   
+                </div>
+
+
+
+                <a href="../../../historia_clinica/historiaclinica.html">
+                    <li class="line">
+                        <img class="pa" src="../../../icons/historia.svg">
+                        <div class="siderbar_label">
+                            <label for="">Historia clinicas</label>
+                        </div>
+                    </li>
+                </a>
+                <a>
+                    <li class="line">
+                        <img class="pe" src="../../../icons/report_FILL0_wght400_GRAD0_opsz48 1.svg">
+                        <div class="siderbar_label">
+                            <label for="">Reportes</label>
+                        </div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+
+
+        <div class="main">
+            <div class="shadow p-3">
+                <div class="filtro">
+                    <img class="filter" src="../../../icons/filter.svg">
+                </div>
+
+                <nav class="ver">
+                    <div class="nav nav-tabs " id="nav-tab" role="tablist">
+                        <button class=" nav-link active " id="nav-ver-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-ver" type="button" role="tab" aria-controls="nav-ver"
+                            aria-selected="true">
+
+                            Ver / Modificar</button>
+                    </div>
+                </nav>
+
+
+
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active table_pr" id="nav-ver" role="tabpanel"
+                        aria-labelledby="nav-home-tab">
+                        <div class="container-FLUID">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="table-responsive">
+                                        <table id="ptable-ver-modificar" class="table table-striped table-bordered"
+                                            style="border: none;width: 100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>ID</th>
+                                                    <th>NOMBRE</th>
+                                                    <th>APELLIDO</th>
+                                                    <th>CEDULA</th>
+                                                    <th>EMAIL</th>
+                                                    <th>CIUDAD</th>
+                                                    <th>CELULAR</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> <input class="chek" type="checkbox"></td>
+                                                    <td>13</td>
+                                                    <td> STIRWIN</td>
+                                                    <td>castro</td>
+                                                    <td>
+                                                        <div class="tel">3202334123</div>
+                                                    </td>
+                                                    <td>stirwinqw@gmail.com</td>
+                                                    <td>cartagena</td>
+                                                    <td>$320213412</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-toggle="modal" data-target="#modal-nav-sin-aprobar">
+                                                            +
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <input class="chek" type="checkbox"></td>
+                                                    <td>213</td>
+                                                    <td> carlos</td>
+                                                    <td>castro</td>
+                                                    <td>
+                                                        <div class="tel">3202334123</div>
+                                                    </td>
+                                                    <td>stirwinqw@gmail.com</td>
+                                                    <td>cartagena</td>
+                                                    <td>$320213412</td>
+                                                    <td><button type="button" class="btn btn-primary"
+                                                            data-toggle="modal" data-target="#modal-nav-sin-aprobar">
+                                                            +
+                                                        </button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <input class="chek" type="checkbox"></td>
+                                                    <td>313</td>
+                                                    <td> valeria</td>
+                                                    <td>castro</td>
+                                                    <td>
+                                                        <div class="tel">3202334123</div>
+                                                    </td>
+                                                    <td>stirwinqw@gmail.com</td>
+                                                    <td>cartagena</td>
+                                                    <td>$320213412</td>
+                                                    <td><button type="button" class="btn btn-primary"
+                                                            data-toggle="modal" data-target="#modal-nav-sin-aprobar">
+                                                            +
+                                                        </button></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="modal-nav-sin-aprobar" tabindex="-1" role="dialog"
+                                            aria-labelledby="historia_clinicaLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Modificar
+                                                            Información</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="info_informacion_consulta">
+                                                            <div class="info_title_consulta">
+                                                                <button class="title_button"
+                                                                    data-target="#collapseInformacion_Consulta"
+                                                                    data-toggle="collapse"> <label for="#">Información
+                                                                        General</label>
+                                                                </button>
+                                                            </div>
+                                                            <div id="collapseInformacion_Consulta"
+                                                                class="row info_informacion_consulta_content collapse show">
+                                                                <div class="row">
+                                                                    <div class="content">
+                                                                        <form class="row">
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Nombre</label>
+                                                                                    <input type="text"
+                                                                                        name="nombre-paciente-ig"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Apellido</label>
+                                                                                    <input name="apellido-paciente-ig"
+                                                                                        type="text"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Tipo Documento</label>
+                                                                                    <select name="tipo-documento-ig"
+                                                                                        id="document"
+                                                                                        class="form-control">
+                                                                                        <option value="none"></option>
+                                                                                        <option value="cc">Cédula de
+                                                                                            Ciudadanía</option>
+                                                                                        <option value="ce">Cédula de
+                                                                                            Extranjería</option>
+                                                                                        <option value="ps">Pasaporte
+                                                                                        </option>
+                                                                                        <option value="pep">Permiso
+                                                                                            Especial de Permanencia
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Documento</label>
+                                                                                    <input name="documento-paciente-ig"
+                                                                                        type="text"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Fecha de
+                                                                                        Nacimiento</label>
+                                                                                    <input
+                                                                                        name="fnacimiento-paciente-ig"
+                                                                                        type="text"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Celular</label>
+                                                                                    <input name="telefono-paciente-ig"
+                                                                                        type="text"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Departamento</label>
+                                                                                    <select
+                                                                                        name="departamento-paciente-ig"
+                                                                                        type="text" id="departament"
+                                                                                        class="form-control">
+                                                                                        <option value="none">Seleccione
+                                                                                            Departamento</option>
+                                                                                        <option value="ama">Amazonas
+                                                                                        </option>
+                                                                                        <option value="ant">Antioquia
+                                                                                        </option>
+                                                                                        <option value="ara">Arauca
+                                                                                        </option>
+                                                                                        <option value="arc">Archipielago
+                                                                                            de San Andres, Providencia
+                                                                                        </option>
+                                                                                        <option value="atl">Atlántico
+                                                                                        </option>
+                                                                                        <option value="bog">Bogotá
+                                                                                        </option>
+                                                                                        <option value="bol">Bolívar
+                                                                                        </option>
+                                                                                        <option value="boy">Boyacá
+                                                                                        </option>
+                                                                                        <option value="cal">Caldas
+                                                                                        </option>
+                                                                                        <option value="caq">Caquetá
+                                                                                        </option>
+                                                                                        <option value="cas">Casanare
+                                                                                        </option>
+                                                                                        <option value="cau">Cauca
+                                                                                        </option>
+                                                                                        <option value="ces">Cesar
+                                                                                        </option>
+                                                                                        <option value="cho">Chocó
+                                                                                        </option>
+                                                                                        <option value="cor">Córdoba
+                                                                                        </option>
+                                                                                        <option value="cun">Cundinamarca
+                                                                                        </option>
+                                                                                        <option value="guai">Guainía
+                                                                                        </option>
+                                                                                        <option value="guav">Guaviare
+                                                                                        </option>
+                                                                                        <option value="hui">Huila
+                                                                                        </option>
+                                                                                        <option value="gua">La Guajira
+                                                                                        </option>
+                                                                                        <option value="mag">Magdalena
+                                                                                        </option>
+                                                                                        <option value="met">Meta
+                                                                                        </option>
+                                                                                        <option value="nar">Nariño
+                                                                                        </option>
+                                                                                        <option value="nor">Norte de
+                                                                                            Santander</option>
+                                                                                        <option value="put">Putumayo
+                                                                                        </option>
+                                                                                        <option value="qui">Quindío
+                                                                                        </option>
+                                                                                        <option value="ris">Risaralda
+                                                                                        </option>
+                                                                                        <option value="sana">San Andrés
+                                                                                            y Providencia</option>
+                                                                                        <option value="sant">Santander
+                                                                                        </option>
+                                                                                        <option value="suc">Sucre
+                                                                                        </option>
+                                                                                        <option value="tol">Tolima
+                                                                                        </option>
+                                                                                        <option value="val">Valle del
+                                                                                            Cauca</option>
+                                                                                        <option value="vau">Vaupés
+                                                                                        </option>
+                                                                                        <option value="vic">Vichada
+                                                                                        </option>
+
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Ciudades</label>
+                                                                                    <selectv name="ciudad-paciente-ig"
+                                                                                        class="form-control"
+                                                                                        id="cities">
+                                                                                        <option value="ciudad">
+                                                                                            Seleccione
+                                                                                            Ciudad</option>
+                                                                                        </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Dirección</label>
+                                                                                    <input name="direccion-paciente-ig"
+                                                                                        type="text"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="">Email</label>
+                                                                                    <input name="email-paciente-ig"
+                                                                                        type="text"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <label for="">Genero</label>
+                                                                                <select name="Genero" id="Genero"
+                                                                                    class="form-control">
+                                                                                    <option value="none"></option>
+                                                                                    <option value="mas">Masculino
+                                                                                    </option>
+                                                                                    <option value="fem">Femenino
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <label for="">EPS</label>
+                                                                                <select name="eps-paciente-ig" id="EPS"
+                                                                                    class="form-control">
+                                                                                    <option value="none"></option>
+                                                                                    <option value="mas">Masculino
+                                                                                    </option>
+                                                                                    <option value="fem">Femenino
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="col-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Foto</label>
+                                                                            <div class="photo_cont">
+                                                                                <img name="foto-paciente-ig"
+                                                                                    src="../pacientes/no-firma.jpg"
+                                                                                    class="gambar img-responsive img-thumbnail"
+                                                                                    id="item-img-output">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Contraseña</label>
+                                                                            <input name-="contrasena-paciente-ig"
+                                                                                class="form-control" type="password">
+                                                                            <div class="form-group">
+                                                                                <label for=""> Confirmar
+                                                                                    Contraseña</label>
+                                                                                <input
+                                                                                    name="confirmar-contrasena-paciente-ig"
+                                                                                    class="form-control"
+                                                                                    type="password">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Bloquear</button>
+                                                            <button type="button" class="btn btn-primary">
+                                                                Modificar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/popper/popper.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../agendamiento/agendamiento.js"></script>
+    <script type="text/javascript" src="../../../Datatables/datatables.min.js"></script>
+</body>
+
+</html>

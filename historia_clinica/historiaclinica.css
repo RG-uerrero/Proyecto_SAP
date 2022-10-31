@@ -51,6 +51,19 @@ ul li {
   width: 100%;
 }
 
+.collapse-items{
+  padding: 11px 0px 11px 15px;
+  border-bottom: 1px solid #E9EDF5;
+  align-items: center;
+  display: flex;
+}
+.collapse-items > .siderbar_label >label{
+  margin: 0px;
+}
+.collapse-items > img{
+  margin-right: 12px;
+  margin-left: 5%;
+}
 
 ul li a {
   margin-left: 15px;

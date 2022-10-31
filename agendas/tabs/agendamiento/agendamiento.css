@@ -1,0 +1,430 @@
+:root {
+    --gray: #F7F9FD;
+  }
+  
+  body {
+    padding: 8px;
+    background: var(--gray);
+  }
+  
+  * {
+    font-family: "Inter", sans-serif;
+  }
+  
+  header {
+    padding: 20px 10px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .shadow {
+    box-shadow: 0px 0px 0px 1px rgba(152, 161, 178, 0.1), 0px 1px 4px rgba(69, 75, 87, 0.12);
+  }
+  
+  .wrapper {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 12% 88%;
+  }
+  
+  /*sidebar*/
+  
+  .sidebar {
+    border-radius: 8px 0 0 8px;
+    background: #fff;
+    height: 100%;
+  }
+  .collapse-items{
+    padding: 11px 0px 11px 15px;
+    border-bottom: 1px solid #E9EDF5;
+    align-items: center;
+    display: flex;
+  }
+  .collapse-items > .siderbar_label >label{
+    margin: 0px;
+  }
+  .collapse-items > img{
+    margin-right: 12px;
+    margin-left: 5%;
+  }
+  ul {
+  
+    display: contents;
+    list-style: none;
+  }
+  
+  ul li {
+    padding: 15px;
+    display: flex;
+    border-bottom: 1px solid #E9EDF5;
+  }
+  
+  .siderbar_label {
+    position: relative;
+    width: 100%;
+  }
+  
+  
+  ul li a {
+    margin-left: 15px;
+    color: #464F60;
+  }
+  
+  
+  ul li label {
+    position: absolute;
+    left: 15px;
+    cursor: pointer;
+  }
+  
+  .active-item {
+    border-right: 8px solid #4362ff !important;
+  }
+  
+  .pa {
+    padding-left: 5px;
+  }
+  
+  
+  /*conntenido*/
+  
+  .tab-content {
+    margin: 10px;
+    padding: 15px 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #8080803b;
+  }
+  
+  .main {
+    padding: 0 0 0 10px;
+  }
+  
+  .main div {
+    background: #fff;
+  }
+  
+  /*.line {
+    border: 1px solid #E9EDF5;
+    border-radius: 1px;
+  }*/
+  
+  .filtro {
+    width: 25px;
+    background: #ffffff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1),
+      0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 2px 5px rgba(89, 96, 120, 0.1);
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  .filtro img {
+    margin-left: 4.5px;
+  }
+  
+  .ver {
+    margin-left: 5%;
+    margin-top: -36px;
+    display: flex
+  }
+  
+  .main {
+    padding: 0 0 0 10px;
+  }
+  
+  .main div {
+    background: #fff;
+  }
+  
+  .filtro {
+    width: 25px;
+    background: #ffffff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1),
+      0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 2px 5px rgba(89, 96, 120, 0.1);
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  .filtro img {
+    margin-left: 4.5px;
+  }
+  
+  .ver {
+    margin-left: 5%;
+    margin-top: -36px;
+    display: flex
+  }
+  
+  table.dataTable.table-striped>tbody>tr:nth-of-type(2n+1) {
+    background-color: rgb(253, 253, 253);
+    margin-bottom: 0px;
+    background-color: #F9FAFC;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #464F60;
+  }
+  
+  table.dataTable.table-striped>tbody>tr:nth-of-type(2n+2) {
+    background-color: #F9FAFC;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #464F60;
+  }
+  
+  div.dataTables_wrapper div.dataTables_length label {
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+  
+  }
+  
+  .dataTables_length {
+    display: none;
+  }
+  
+  div.dataTables_wrapper div.dataTables_filter label {
+    width: 320px;
+    height: 30px;
+    left: -760px;
+    top: -10px;
+  
+  }
+  
+  .sorting {
+    background: #F9FAFC;
+  }
+  
+  .container-FLUID {
+    margin-top: 0px;
+    margin-left: 0px;
+    display: block;
+  }
+  
+  table.table-bordered.dataTable th,
+  table.table-bordered.dataTable td {
+    border: none;
+    height: 34px;
+  }
+  
+  .tel {
+    padding: 0px 10px;
+    width: 98px;
+    height: 20px;
+    color: #4F5AED;
+    opacity: 90%;
+    background: #e9e9eb;
+    border-radius: 10px;
+  }
+  
+  .tab-content {
+    margin: 10px;
+    padding: 15px 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #8080803b;
+  }
+  
+  /*Ingresar*/
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  /* PESTAÑA VER*/
+  
+  /* PESTAÑA INGRESAR*/
+  
+  .form_label>label {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .photo_cont {
+    width: 200px;
+    height: 150px;
+  }
+  
+  /* CSS MODAL HISTORIA CLINICA*/
+  
+  .modal fade show {
+    background: transparent;
+  }
+  
+  #modal-nav-sin-aprobar,
+  #modal-nav-aprobados,
+  #modal-nav-procesos-terminados {
+    background: transparent;
+  }
+  
+  
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    background: white !important;
+  }
+  
+  label {
+    color: gray;
+  }
+  
+  .info_title_consulta,
+  .info_title_profesional,
+  .info_title_paciente,
+  .info_title_historia_clinica {
+    padding: 9px 0px 0px 16px;
+    margin-left: 7px;
+    margin-right: 7px;
+    background-color: #609cf5de !important;
+    color: white;
+  }
+  
+  .info_title_consulta>button>label,
+  .info_title_profesional>button>label,
+  .info_title_paciente>button>label,
+  .info_title_historia_clinica>button>label {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .info_title_consulta>button,
+  .info_title_profesional>button,
+  .info_title_paciente>button,
+  .info_title_historia_clinica>button {
+    outline: none;
+    padding-right: 50%;
+  }
+  
+  
+  .title_button {
+    background: transparent;
+    border: none;
+    margin-bottom: 3px;
+  }
+  
+  .info_subtitle {
+    padding: 1px 0px 0px 6px;
+    margin-left: 7px;
+    margin-right: 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #404c5a;
+    font-size: 18px;
+    border: 1px solid #cecece;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .info_subtitle>label,
+  .info_subtitle_1>label {
+    color: #284f88de;
+  }
+  
+  .info_subtitle_sub>label {
+    color: #2b5694de;
+  }
+  
+  .info_subtitle_1 {
+    padding: 1px 0px 0px 6px;
+    margin-left: 7px;
+    margin-right: 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #404c5a;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  
+  .info_subtitle_sub {
+    margin-top: 30px;
+    margin-left: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .historia_seccion {
+    margin-top: 30px;
+  }
+  
+  .info_informacion_consulta_content,
+  .info_profesional_content,
+  .info_paciente_content,
+  .info_historia_clinica_content {
+    display: flex;
+    justify-content: center;
+    /*gap: 60px;*/
+    margin-top: 15px;
+    margin-bottom: 50px;
+    ;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    /*gap: 60px;*/
+    margin-top: 15px;
+  }
+  
+  .content-hc {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  @media (min-width: 992px) {
+  
+    .modal-lg,
+    .modal-xl {
+      max-width: 900px;
+    }
+  }
+  
+  /* carga en bloque*/
+  
+  .btn_car {
+    margin: 5px;
+    color: black;
+    border-radius: 7px;
+    border-width: 3px;
+    cursor: pointer;
+  }
+  
+  .btn_azul {
+    border-color: #4355B1;
+    background-color: white;
+    color: #4355B1;
+  }
+  
+  .btn_azul:hover {
+    border-color: #4355B1;
+    background: #4355B1;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .btn_gris {
+    border-color: #666666;
+    background-color: white;
+    color: #666666;
+  }
+  
+  .btn_gris:hover {
+    border-color: #666666;
+    background: #666666;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .botn {
+    background-color: #464F60;
+    color: white;
+  }

@@ -9,8 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <!-- dataTable -->
 
@@ -21,9 +19,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <!-- CSS personalizado -->
-    <link rel="stylesheet" href="../main.css">
-
 
     <!--datables CSS básico-->
     <link rel="stylesheet" type="text/css" href="../datatables/datatables.min.css" />
@@ -58,14 +53,52 @@
                         </div>
                     </li>
                 </a>
-                <a href="../agendas/agendas.html">
-                    <li class="line">
+       
+                <li class="line">
+                    <img class="pa" src="../icons/agenda.svg">
+                    <div class="siderbar_label">
+                        <label style="width: 100%;" data-toggle="collapse" href="#collapseAgenda" role="button" aria-expanded="false" aria-controls="collapseExample" for="">Agendas</label>
+                    </div>
+                 
+                      
+                </li>
+            
+                <div class="collapse" id="collapseAgenda">
+                    <a href="../agendas/tabs/agendamiento/agendamiento.html">
+                       <div class="collapse-items">
                         <img class="pa" src="../icons/agenda.svg">
                         <div class="siderbar_label">
-                            <label for="">Agendas</label>
+                          
+                            <label data-toggle="collapse" href="#collapseAgenda" role="button" aria-expanded="false"
+                                aria-controls="collapseExample" for="">Agendamiento</label>
+    
                         </div>
-                    </li>
-                </a>
+                       </div>
+                    </a>
+                    <a href="../agendas/tabs/consultas/consultas.html">
+                        <div class="collapse-items">
+                         <img class="pa" src="../icons/agenda.svg">
+                         <div class="siderbar_label">
+                           
+                             <label data-toggle="collapse" href="#collapseAgenda" role="button" aria-expanded="false"
+                                 aria-controls="collapseExample" for="">Consultas</label>
+     
+                         </div>
+                        </div>
+                     </a>
+                     <a href="../agendas/tabs/operador/operador.html">
+                        <div class="collapse-items">
+                         <img class="pa" src="../icons/agenda.svg">
+                         <div class="siderbar_label">
+                           
+                             <label data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                 aria-controls="collapseExample" for="">Operador</label>
+     
+                         </div>
+                        </div>
+                     </a>
+                       
+                    </div>
                 <a href="../historia_clinica/historiaclinica.html">
                     <li class="line active-item">
                         <img class="pa" src="../icons/historia.svg">
@@ -117,23 +150,7 @@
 
 
 
-                        <p>
-                            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
-                                aria-expanded="false" aria-controls="collapseExample">
-                                Link with href
-                            </a>
-                            <button class="btn btn-primary" type="button" data-toggle="collapse"
-                                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                Button with data-target
-                            </button>
-                        </p>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                sapiente ea proident.
-                            </div>
-                        </div>
+                      
                         <div class="container-FLUID">
                             <div class="row">
                                 <div class="col-lg-12">
